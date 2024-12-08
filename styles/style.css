@@ -176,7 +176,6 @@ ol {
 .content__video-card-description {
   line-height: 0.9;
   max-inline-size: 199px;
-  max-block-size: 65px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -224,10 +223,13 @@ input:focus-visible {
 
 .search-form__label {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .search-form__label:hover .search-form__label-text {
-  border-bottom: currentColor 1px solid;
+  text-decoration: underline;
 }
 
 .search-form__pseudo-checkbox {
